@@ -15,4 +15,4 @@ def perfect_numbers(x, y):
                 divisores.append(num)
         divisores = []
 
-print(perfect_numbers(28,497))
+print( "-1" if perfect_numbers(3,5)==None else perfect_numbers(3,5))
