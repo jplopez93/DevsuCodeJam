@@ -19,19 +19,18 @@ def searchEngine(query= None, elements=None):
             if len(lista_encontrados) != 3:
                 
                 resultado = re.search(f"^{query[0:contador_query]}",word)
-                if resultado == None:
-                    pass
+                
                 if resultado != None:
                     lista_encontrados.append(word)
                     contador_query +=1
                 
             if len(lista_encontrados) > 3:
                 lista_encontrados = []
-            else:
-                continue
+            
         lista_resultados.append(sorted(lista_encontrados))
 
     return print(sorted(lista_resultados))
+
 searchEngine()
 
         
